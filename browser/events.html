@@ -1,0 +1,141 @@
+<?php include 'header1.php';?>
+
+<!-- Page content -->
+
+<div id="page-contenta">
+<style>
+#events-list {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}.scheme {
+    color: #ffffff;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.2);
+}.event-item:first-child {
+    border-top: 0 none;
+}
+.event-item {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    clear: both;
+    cursor: pointer;
+    overflow: hidden;
+}.event-icon {
+    background: rgba(0, 0, 0, 0.3) none repeat scroll 0 0;
+    float: left;
+    overflow: hidden;
+} .event-text {
+    float: left;
+}.event-icon .event-icon-month {
+    font-weight: bold;
+    line-height: 2.5;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    text-align: center;
+    text-transform: uppercase;
+}.event-icon .event-icon-month {
+    color: #ffdb95;
+} .event-icon .event-icon-day {
+    font-weight: bold;
+    line-height: 1;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    text-align: center;
+}.event-icon .event-icon-day {
+    color: #ffffff;
+} .event-text h2 {
+    font-weight: bold;
+    line-height: 1.5;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    text-align: left;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.event-text h2, #event-details-title {
+    color: #ffffff;
+} .event-text .event-desc {
+    overflow: hidden;
+    text-align: left;
+	color:#fff;
+    text-overflow: ellipsis;
+    white-space: pre-wrap;
+} .event-text .event-date {
+    text-align: right;
+}
+.event-text .event-date, .scheme #event-details-datetime {
+    color: #ffffff;
+}
+
+.insidedia {
+    margin-left: 3%;
+    width: 94%;
+}
+
+
+
+
+
+
+</style>
+<div class="row">
+  <div class="col-xs-12 insidedia">
+<div id="events-list" style="display: block;">
+<div onclick="openEventDetails('2095963')" class="event-item" style="height: 70px;">
+<div class="event-icon" style="margin-right: 13px; height: 70px; width: 60px;">
+<div class="event-icon-month" style="height: 25px; font-size: 14px;">Mar</div>
+<div class="event-icon-day" style="height: 32px; font-size: 35px;">27</div>
+</div>
+<div class="event-text" style="width: 220px; margin-top: 8px;">
+<h2 id="event-title-2095963" style="font-size: 14px; width: 220px;">The Sunday Set</h2>
+<div id="event-description-2095963" class="event-desc" style="font-size: 11px; height: 20px;">Every month on a Sunday from 2pm-4pm 
+</div>
+<div id="event-datetime-2095963" class="event-date" style="font-size: 9px;">03/27/2015 12:00 AM</div>
+</div>
+</div>
+<div onclick="openEventDetails('2095964')" class="event-item" style="height: 70px;">
+<div class="event-icon" style="margin-right: 13px; height: 70px; width: 60px;">
+<div class="event-icon-month" style="height: 25px; font-size: 14px;">Apr</div>
+<div class="event-icon-day" style="height: 32px; font-size: 35px;">01</div>
+</div>
+<div class="event-text" style="width: 220px; margin-top: 8px;">
+<h2 id="event-title-2095964" style="font-size: 14px; width: 220px;">Tiramissu free!</h2>
+<div id="event-description-2095964" class="event-desc" style="font-size: 11px; height: 20px;">Promotion! Order coffee from 9 am to 11 </div>
+<div id="event-datetime-2095964" class="event-date" style="font-size: 9px;">04/01/2015 12:00 AM</div>
+</div>
+</div>
+<div onclick="openEventDetails('2095965')" class="event-item" style="height: 70px;">
+<div class="event-icon" style="margin-right: 13px; height: 70px; width: 60px;">
+<div class="event-icon-month" style="height: 25px; font-size: 14px;">Apr</div>
+<div class="event-icon-day" style="height: 32px; font-size: 35px;">07</div>
+</div>
+<div class="event-text" style="width: 220px; margin-top: 8px;">
+<h2 id="event-title-2095965" style="font-size: 14px; width: 220px;">Afternoon Play</h2>
+<div id="event-description-2095965" class="event-desc" style="font-size: 11px; height: 20px;">A great chance to meet new people and 
+</div>
+<div id="event-datetime-2095965" class="event-date" style="font-size: 9px;">04/07/2015 12:00 AM</div>
+</div>
+</div>
+<div onclick="openEventDetails('2095966')" class="event-item" style="height: 70px;">
+<div class="event-icon" style="margin-right: 13px; height: 70px; width: 60px;">
+<div class="event-icon-month" style="height: 25px; font-size: 14px;">Apr</div>
+<div class="event-icon-day" style="height: 32px; font-size: 35px;">10</div>
+</div>
+<div class="event-text" style="width: 220px; margin-top: 8px;">
+<h2 id="event-title-2095966" style="font-size: 14px; width: 220px;">Come In and Try!</h2>
+<div id="event-description-2095966" class="event-desc" style="font-size: 11px; height: 20px;">Buy one Coffee and get one FREE!</div>
+<div id="event-datetime-2095966" class="event-date" style="font-size: 9px;">04/10/2015 12:00 AM</div>
+</div>
+</div>
+</div>
+
+  <script>
+function openEventDetails(v){
+
+	loadPage('events_view.html');
+
+}
+</script>  
+  </div>
+</div>

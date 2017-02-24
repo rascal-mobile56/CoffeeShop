@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.helse" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0" xmlns:gap="http://phonegap.com/ns/1.0">
+    <name>Helse</name>
+    <description>Milk App.</description>
+    <author email="support@helse.co.in" href="http://helse.co.in">Helse Team</author>
+    <content src="index.html" />
+    <icon src="icon.png" />
+    <splash src="splash.png" />
+    <icon platform="android" qualifier="ldpi" src="www/res/icon/android/drawable-ldpi-icon.png" />
+    <icon platform="android" qualifier="mdpi" src="www/res/icon/android/drawable-mdpi-icon.png" />
+    <icon platform="android" qualifier="hdpi" src="www/res/icon/android/drawable-hdpi-icon.png" />
+    <icon platform="android" qualifier="xhdpi" src="www/res/icon/android/drawable-xhdpi-icon.png" />
+    <icon platform="android" qualifier="xxhdpi" src="www/res/icon/android/drawable-xxhdpi-icon.png" />
+    <icon platform="android" qualifier="fr-xxhdpi" src="www/res/icon/android/drawable-xxxhdpi-icon.png" />
+    <access origin="*" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <allow-intent href="tel:*" />
+    <allow-intent href="sms:*" />
+    <allow-intent href="mailto:*" />
+    <allow-intent href="geo:*" />
+    <preference name="DisallowOverscroll" value="true" />
+    <preference name="android-minSdkVersion" value="14" />
+    <preference name="ShowSplashScreenSpinner" value="false" />
+    <preference name="FadeSplashScreen" value="false" />
+    <preference name="SplashScreen" value="screen" />
+    <preference name="SplashScreenDelay" value="0" />
+    <preference name="fullscreen" value="true" />
+    <preference name="Orientation" value="portrait" />
+</widget>

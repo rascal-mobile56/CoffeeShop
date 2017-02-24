@@ -1,0 +1,26 @@
+Array
+(
+    [listUserSubscriptions] => Array
+        (
+            [auth] => 
+            [method] => GET
+            [endpoint] => https://dev.rep1st.com/api/v1/user_subscription_rest?access_token={oauth2_token}&companyId={company_id}&userId={user_id}
+            [description] => https://dev.rep1st.com/api/v1/user_subscription_rest?access_token=99c01822079cbd10fc0360e66ab94116ac0f5365&companyId=167&userId=1
+        )
+
+    [removeUserFromEvent] => Array
+        (
+            [auth] => 1
+            [method] => POST
+            [endpoint] => https://dev.rep1st.com/api/v1/event_subscriptions/{company_id}/{event_id}/{user_id}/delete?access_token={oauth2_token}
+            [description] => https://dev.rep1st.com/api/v1/event_subscriptions/167/181/1/add?access_token=87cfd05a99eb05dd50faee5d3c64551072015010
+        )
+
+    [subscribeUserToEvent] => Array
+        (
+            [method] => POST
+            [endpoint] => https://dev.rep1st.com/api/v1/event_subscriptions/{company_id}/{event_id}/{user_id}/add?access_token={oauth2_token}
+            [description] => https://dev.rep1st.com/api/v1/event_subscriptions/167/181/1/add?access_token=87cfd05a99eb05dd50faee5d3c64551072015010
+        )
+
+)

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AD_UNIT_ID_FOR_BANNER_TEST</key>
+	<string>ca-app-pub-3940256099942544/2934735716</string>
+	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
+	<string>ca-app-pub-3940256099942544/4411468910</string>
+	<key>CLIENT_ID</key>
+	<string>837166089402-ken787434h5ubb3kikd4a39kic2s8l3b.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.837166089402-ken787434h5ubb3kikd4a39kic2s8l3b</string>
+	<key>API_KEY</key>
+	<string>AIzaSyBsOu5jrDohTA3-6l2A9J4duxVq27KWpBM</string>
+	<key>GCM_SENDER_ID</key>
+	<string>837166089402</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.coffeeshop.www</string>
+	<key>PROJECT_ID</key>
+	<string>coffe-shop</string>
+	<key>STORAGE_BUCKET</key>
+	<string>coffe-shop.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<true/>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false/>
+	<key>IS_APPINVITE_ENABLED</key>
+	<false/>
+	<key>IS_GCM_ENABLED</key>
+	<true/>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true/>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:837166089402:ios:8d3ce58121184c1e</string>
+	<key>DATABASE_URL</key>
+	<string>https://coffe-shop.firebaseio.com</string>
+</dict>
+</plist>

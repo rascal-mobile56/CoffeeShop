@@ -1,0 +1,164 @@
+<style>
+    body { /* CSS for BODY transition when menu is set to push BODY content. */
+	-moz-transition: left 100ms ease-in-out, right 100ms ease-in-out;
+	-webkit-transition: left 100ms ease-in-out, right 100ms ease-in-out;
+	transition: left 100ms ease-in-out, right 100ms ease-in-out;
+}
+.sidetogglemenu { /* shared class for side toggle menus */
+	background-color: white;
+	width: 250px; /* default menu width */
+	height: 100%;
+	position: fixed;
+        overflow-x: auto;
+	top: -100%;
+	clear: both;
+	display: block;
+	visibility: 'hidden';
+	box-shadow:2px 0 4px rgba(174, 174, 174, 0.5);
+	-moz-transition: all 100ms ease-in-out; /* change 100ms to slide in animation time */
+	-webkit-transition: all 100ms ease-in-out;
+	transition: all 100ms ease-in-out;
+}
+.sidetogglemenu ul {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+.sidetogglemenu a {
+	font-size:18px;
+	font-family: 'open_sanslight';
+	padding: 15px;
+	display: block;
+	color: #02060d;
+	text-decoration: none;
+	border-bottom: 1px solid #e3e3e3;
+}
+.sidetogglemenu a img{ padding-right:8px;}
+.sidetogglemenu a:hover {
+	color: #000;
+	font-family: 'open_sanssemibold';
+}
+/* #######  Additional CSS for toggle menu #togglemenu2  ####### */
+
+#togglemenu2 {
+	width: 250px;
+	border-width: 0;
+	background: rgb(53,106,160);
+	box-shadow: -5px 0 5px rgba(174, 174, 174, .8);
+}
+#togglemenu2 ul a {
+	color: white;
+	border-bottom: 1px solid #eee;
+	font: bold 14px;
+	text-transform: uppercase;
+}
+#togglemenu2 a:hover {
+	background: #162a50;
+	color: white;
+}
+/* #######  Responsive Menu related CSS  ####### */
+
+div#smallscreentoggler { /* CSS for small screen menus toggler, shown when device width is below specified */
+	width: 1.5em;
+	z-index: 10000;
+	color: white;
+	position: relative;
+	float: right;
+	overflow: hidden;
+	background: gray;
+	font: normal 1.8em Arial;
+	margin-bottom: 0.5em;
+	text-align: center;
+	box-shadow: -3px 3px 5px gray;
+	cursor: pointer;
+	border-radius: 2px;
+	display: none;
+	-moz-transition: all 200ms ease-in-out;
+	-webkit-transition: all 200ms ease-in-out;
+	transition: all 200ms ease-in-out;
+}
+div#smallscreentoggler:hover {
+	background: #eee;
+	color: black;
+	-moz-transition: all 200ms ease-in-out;
+	-webkit-transition: all 200ms ease-in-out;
+	transition: all 200ms ease-in-out;
+}
+
+</style>
+
+         <div class="navmenu">
+                <div class="menu-icon">
+                    <input type="image" src="images/menu-icon.png" onClick="menu1.toggle();" class="sideviewtoggle">
+                </div>
+                <div class="clearfix"></div>
+            </div>
+            <div id="togglemenu1" class="sidetogglemenu">
+                <!--
+-->                <ul>
+				<li><a href="#" rel="external" onClick="window.location='indexnew.html?url=indexa.html&id=2';" class="" >Home</a></li>
+                                                 <!--<div class="menu-item">-->
+                            <li>
+					<a onClick="loadPage('contact.html')" class="" >Contact Us</a>
+                                        </li>
+				<!--</div>-->
+                                
+							                            <!--<div class="menu-item">-->
+                            <li>
+					<a onClick="loadPage('cms_0.html')" class="" >About Us</a>
+                                        </li>
+				<!--</div>-->
+                                
+							                            <!--<div class="menu-item">-->
+                            <li>
+					<a onClick="loadPage('cms_1.html')" class="" >Evenings</a>
+                                        </li>
+				<!--</div>-->
+                                
+							                            <!--<div class="menu-item">-->
+                            <li>
+					<a onClick="loadPage('myevents.html')" class="" >Events</a>
+                                        </li>
+				<!--</div>-->
+                                
+							                            <!--<div class="menu-item">-->
+                            <li>
+					<a onClick="loadPage('scanqr.html')" class="" >QR Scan</a>
+                                        </li>
+				<!--</div>-->
+                                
+							                            <!--<div class="menu-item">-->
+                            <li>
+					<a onClick="loadPage('logout.html')" class="" >Logout</a>
+                                        </li>
+				<!--</div>-->
+                                
+							                            <!--<div class="menu-item">-->
+                            <li>
+					<a onClick="loadPage('submenu.html')" class="" >Settings</a>
+                                        </li>
+				<!--</div>-->
+                                
+							                            <!--<div class="menu-item">-->
+                            <li>
+					<a onClick="loadPage('')" class="" >QrForm</a>
+                                        </li>
+				<!--</div>-->
+                                
+							                 
+                </ul><!--
+                -->
+            </div>
+      <script src="js/sidetogglemenu.js"></script> 
+<script>
+    jQuery(function() { // on DOM load
+        menu1 = new sidetogglemenu({// initialize first menu example
+            id: 'togglemenu1',
+            marginoffset: 1
+        })
+    })
+</script>
+<script type="text/javascript"> 
+    var menudiv = document.getElementById("togglemenu1");
+//    menudiv.innerHTML = side_menu;
+</script>

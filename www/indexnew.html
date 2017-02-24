@@ -1,0 +1,1123 @@
+<!DOCTYPE html>
+<style>
+.navbar.navbar-default > span {
+	float: left;
+	font-size: 15px;
+	margin-top: -12%;
+	text-align: center;
+	width: 100%;
+}
+.sidebar-brand > img {
+	border-radius: 24px;
+	height: 80px;
+	width: 80px;
+	margin-top: 2%;
+}
+#sidebar {
+	z-index: 44444444;
+}
+.col-xs-12 {
+	text-align: center;
+}
+.sidebar-content {
+	width: 100% !important;
+}
+.sidebar-visible-xs #sidebar {
+	width: 80% !important;
+}
+#username_nav {
+	float: left;
+	width: 64%;
+	margin-left: 1%;
+	font-weight: bold;
+	margin-top: 5%;
+	text-align: center;
+	line-height: 35px;
+	color: #fff;
+	font-size: 22px;
+}
+.hvr-shutter-out-horizontal:hover {
+	text-decoration: none;
+}
+#userimage_nav {
+	float: left;
+	width: 35%;
+}
+#userimage_nav > img {
+	height: 90px;
+	margin-left: 3%;
+	width: 90px;
+}
+#main-container-new {
+	background: none repeat scroll 0 0 rgba(255, 255, 255, 0.7);
+	float: left;
+	height: 100%;
+	position: absolute;
+	text-align: center;
+	width: 100%;
+	z-index: 9999;
+}
+.sidebar-nav > li > a {
+	font-size: 18px;
+}
+header {
+	height: 56px;
+}
+.sidebar-nav > li {
+	padding: 2%;
+}
+html, body {
+	max-width: 100%;
+	overflow-x: hidden;
+}
+.navbar-default {
+    position: fixed !important;
+    top: 0;
+    width: 100% ;
+    z-index: 9999999;
+}
+#page-content {
+	margin-top: 60px;
+}
+.menu-item img {
+    width: 100%;
+}
+.subbtn{
+    color:#000000;
+}
+.navmenu{
+    margin-top: 15px;
+}
+</style>
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" manifest="manifest.appcache">
+<!--<![endif]-->
+<head>
+<title>Helse</title>
+<meta charset="utf-8">
+<meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+<meta name="HandheldFriendly" content="true">
+<meta name="mobile-web-app-capable" content="yes">
+<link href="css/hover.css" rel="stylesheet" media="all">
+
+<!-- Icons -->
+<!-- The following icons can be replaced with your own, they are used by desktop and mobile browsers -->
+<link rel="shortcut icon" href="img/favicon.ico">
+<link rel="apple-touch-icon" href="img/icon57.png" sizes="57x57">
+<link rel="apple-touch-icon" href="img/icon72.png" sizes="72x72">
+<link rel="apple-touch-icon" href="img/icon76.png" sizes="76x76">
+<link rel="apple-touch-icon" href="img/icon114.png" sizes="114x114">
+<link rel="apple-touch-icon" href="img/icon120.png" sizes="120x120">
+<link rel="apple-touch-icon" href="img/icon144.png" sizes="144x144">
+<link rel="apple-touch-icon" href="img/icon152.png" sizes="152x152">
+<!-- END Icons -->
+
+<!-- Bootstrap is included in its original form, unaltered -->
+<link rel="stylesheet" href="css/bootstrap.min.css">
+
+<!-- Stylesheets -->
+<link rel="stylesheet" href="css/plugins.css">
+
+<!-- The m plugins -->
+<link rel="stylesheet" href="css/main.css">
+
+<!-- Include a specific file here from css/themes/ folder to alter the default theme of the template -->
+
+<!-- The themes stylesheet of this template (for using specific theme color in individual elements - must included last) -->
+<link rel="stylesheet" href="css/themes.css">
+<link rel="stylesheet" href="css/themes/autumn.css">
+<!--<link rel="stylesheet" href="css/sidetogglemenu.css" />-->
+<!-- END Stylesheets -->
+
+<!-- Modernizr (browser feature detection library) & Respond.js (Enable responsive CSS code on browsers that don't support it, eg IE8) -->
+<script src="js/vendor/modernizr-2.7.1-respond-1.4.2.min.js"></script>
+</head>
+<body>
+<div id="page-container" class="sidebar-partial sidebar-visible-lg sidebar-no-animations"> 
+  <!-- Alternative Sidebar -->
+  <div id="sidebar-alt"> 
+    <!-- Wrapper for scrolling functionality --> 
+    
+    <!-- END Wrapper for scrolling functionality --> 
+  </div>
+  <!-- END Alternative Sidebar --> 
+  
+  <!-- Main Sidebar -->
+  
+  <!-- END Main Sidebar -->
+  <div id="main-container-new" style="display:none;"></div>
+  <!-- Main Container -->
+  <div id="main-container"> 
+    <!-- Header --> 
+    <!-- In the PHP version you can set the following options from inc/config.html file --> 
+    <!--
+	Available header.navbar classes:
+
+	'navbar-default'            for the default light header
+	'navbar-inverse'            for an alternative dark header
+
+	'navbar-fixed-top'          for a top fixed header (fixed sidebars with scroll will be auto initialized, functionality can be found in js/app.js - handleSidebar())
+	'header-fixed-top'      has to be added on #page-container only if the class 'navbar-fixed-top' was added
+
+	'navbar-fixed-bottom'       for a bottom fixed header (fixed sidebars with scroll will be auto initialized, functionality can be found in js/app.js - handleSidebar()))
+	'header-fixed-bottom'   has to be added on #page-container only if the class 'navbar-fixed-bottom' was added
+	-->
+    <header class="navbar navbar-default" id="fixed"> 
+      <!-- Left Header Navigation -->
+      <ul class="nav navbar-nav-custom">
+        <!-- Main Sidebar Toggle Button -->
+        <li id="changenavhtml"> <a href="javascript:void(0)" onclick="sidebar();" id="adasda"> </a> </li>
+      </ul>
+      <span id="headingof" style=""> </span>
+      <div id="togglem"></div>
+            
+    </header>
+    <!-- END Header -->
+<style>
+#headingof{
+	width:75%;margin:0 auto;margin-top:3%;font-weight:bold;font-size:25px;	
+	font-family: serif;
+}
+#loaderssdsass {
+    background: rgba(255, 255, 255, 0.7) none repeat scroll 0 0;
+    float: left;
+    height: 100%;
+    margin-left: -1.3%;
+    margin-top: -20%;
+    position: absolute;
+    text-align: center;
+    width: 101%;
+    z-index: 2147483647;
+}
+#loaderssdsassimg{
+	background: #fff none repeat scroll 0 0;
+    border: 2px solid #b5572a ;
+    border-radius: 6px;
+    margin-top: 70%;
+    padding: 2%;
+    width: 13%;
+}
+.navbar-default {
+    border-bottom: 2px solid #fff !important;
+}
+@media only screen and (min-width:856px) and (max-width:1026px) {
+	#headingof{
+		font-size: 25px;
+		font-weight: bold;
+		margin: 1% auto 0;
+		width: 90%
+	}
+}
+@media only screen and (min-width:675px) and (max-width:790px) {
+	#headingof {
+		font-size: 25px;
+		font-weight: bold;
+		margin: 1% auto 0;
+		width: 86%;
+	}
+}
+@media only screen and (min-width:791px) and (max-width:855px) {
+	#headingof {
+		font-size: 25px;
+		font-weight: bold;
+		margin: 1% auto 0;
+		width: 86%;
+	}
+}
+
+#logoutpage {
+    margin-bottom: 100%;
+}
+body{
+	background-size:107% !important;
+}
+</style>
+    <!-- Page content -->
+    
+    <div id="page-content" style="overflow:none;">
+      <div id="loaderssdsass" style="display:none;"> <img src="images/loading.gif" id="loaderssdsassimg"> </div>
+      <div class="row" id="pagea-contentaa" style=""> </div>
+    </div>
+    <!-- END Page Content --> 
+    <!-- Footer --> 
+    
+    <!-- END Footer --> 
+  </div>
+  <!-- END Main Container --> 
+</div>
+<!-- END Page Container --> 
+
+<span id="detailsveh" style="display:none;"></span> 
+<!-- Scroll to top link, initialized in js/app.js - scrollToTop() --> 
+<a href="#" id="to-top"><i class="fa fa-angle-double-up"></i></a> 
+
+<!-- User Settings, modal which opens from Settings link (found in top right user menu) and the Cog link (found in sidebar user info) --> 
+
+<!-- END User Settings --> 
+
+<!-- Remember to include excanvas for IE8 chart support --> 
+<!--[if IE 8]><script src="js/helpers/excanvas.min.js"></script><![endif]--> 
+<script>!window.jQuery && document.write(decodeURI('%3Cscript src="js/vendor/jquery-1.11.0.min.js"%3E%3C/script%3E'));</script> 
+
+<!-- Bootstrap.js, Jquery plugins and Custom JS code --> 
+<script src="js/vendor/bootstrap.min.js"></script>
+
+<script>
+function ajaxStart(){
+	$('#pagea-conten').addClass('ajax');
+}
+function ajaxComplete(){
+	$('#pagea-conten').removeClass('ajax');
+}
+function loadPage(url,id)	//the function that loads pages via AJAX
+{
+   	setTimeout(function() { run_nowa(); }, 600);
+	setTimeout(function() { run_nowaa(); }, 500);
+	setTimeout(function() { run_now(url,id); }, 1000);
+}
+function run_nowa(){
+	$('#loaderssdsass').show();
+	$('#main-container-new').show();
+}
+function run_nowaa(){
+
+}
+function getFormattedDate(timestamp){
+	var a = new Date(timestamp * 1000);
+	var n = a.toLocaleTimeString();
+	var y = a.getFullYear();
+	var m = a.getMonth()+1;
+	var d = a.getDate();
+	var time = d + '-' + m + '-' + y + ' ' + n;
+	return time;
+}
+function getMonthName(mon){
+	var month = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+	var monthname = month[mon];
+	return monthname.substring(0, 3);
+}
+var categoryArrayItem = [];
+var subscribedEvents = [];
+var x = getCookie('subscriptions');
+console.log(x);
+if(x){
+    subscribedEvents = $.parseJSON(x);
+    console.log("gg")
+//    var x = getCookie('subscriptions');
+//    for (var i = 0; i < x; i++) {
+//    subscribedEvents.push(x[i]);
+//    //Do something
+//}
+}
+console.log(subscribedEvents);
+window.localStorage.setItem("prodCount","0");
+function run_now(url,param){
+    console.log(url);
+    if(url == 'indexa.html'){
+        $("#togglem").hide();
+    }else{
+//        alert("sdf");
+        $("#togglem").show();
+        $("#togglem").load('menu.html');
+    }
+    console.log(param);
+     var matches;
+    window.localStorage.setItem('goPrev',false);
+	//document.getElementById("page-content").style.backgroundColor = "#b5572a";
+	var goHome = '<a href="javascript:void(0)" onclick="loadPage(&quot;indexa.html&quot;)" id="adasda">'
+					+'<i class="fa fa-angle-left"'
+						+' style="color:#fff;font-size:24px;padding-top:11px;"></i>'
+				 +'</a>';
+	$.ajax({	//create an ajax request to load_page.html
+		type: "POST",
+		url: url,
+		success: function(msg){
+			$('#changenavhtml').html('<a href="javascript:void(0)" onclick="window.location=&quot;index.html&quot;;"; id="adasda"><img src="images/abcd.png"></a>');
+			var recipeshow = url.replace(/\d+/g, '');
+			
+			$("#pagea-contentaa").html(msg).promise().done(function(){
+				if(url == "indexa.html"){
+					document.body.style.background= "rgba(0, 0, 0, 0) url('images/69e194d8d414bb734b19891f62700500b5544a20.jpg') no-repeat scroll 0 55px"; 
+				}
+				else {
+					document.body.style.backgroundColor = "#FF5AFF"; 
+				}
+				
+				if(url == "indexa.html"){
+					$("#headingof").html("Tea Shop Wongs");
+					$('#loaderssdsass').hide();
+					$("#main-container-new").hide();
+				}
+								else if(url == "contact.html"){
+					$("#headingof").html("Contact Us");
+					$('#changenavhtml').html(goHome)
+					.promise()
+					.done(function(){
+						$('#loaderssdsass').hide();
+						$("#main-container-new").hide();
+					});
+				}
+												else if(url == "myevents.html"){
+					$("#headingof").html("My subscriptions");
+					$('#changenavhtml').html(goHome)
+					.promise()
+					.done(function(){
+						$("#events-list").empty();
+						var company_id = "167";
+						var endpoint = "https://dev.rep1st.com/company-events/{company_id}/feed/teaser";
+                                                endpoint = endpoint.replace('{company_id}',company_id);
+						//var endpoint="https://dev.rep1st.com/company-events/"
+										//+company_id+"/feed/teaser";
+						function getEventsList(endpoint){
+							$.ajax({
+								type: "GET",
+								url: endpoint,
+								success: function(data){
+//                                                                    console.log(data);
+									var event_data = '';
+									var eventLists = data.company;
+//                                                                        console.log(data.company);
+									if (eventLists.length>0){
+										for(ind=0; ind<eventLists.length; ind++){
+											eventItem = eventLists[ind].event;
+                                                                                        console.log(JSON.stringify(eventItem));
+                                                                                        var ee = JSON.stringify(eventItem);
+											ei_id = eventItem.eventId;
+                                                                                        ci_id = eventItem.companyId;
+											ei_na = eventItem.name;
+											ei_is = eventItem.image.src;
+											ei_bo = eventItem.body;
+											ei_su = eventItem.subscriptionUrl;
+											ei_ed = getFormattedDate(eventItem.eventDate);
+                                                                                        ext = eventItem.external;
+                                                                                        console.log(ei_ed);
+                                                                                        console.log(ei_ed.split('-')[1]-1);
+                                                                                        monthname = getMonthName(ei_ed.split('-')[1]-1);
+                                                                                        //<img src="'+ei_is+'">
+//                                                                                        var ob = {"title":cmses[0]["cms"]["title"],"body":body.html.replace(/&nbsp;/g,'&nbsp')};
+											event_data += '<div class="col-sm-12 col-md-4" ><div class="widget insidedi"> <div class="widget-simple ">';
+                                                                                        
+                                                                                        if(ext){
+                                                                                            event_data += '<div id="left20" onClick="window.open(\''+ei_su+'\',\'_blank\')"><a class="widget-icon pull-left animation-fadeIn themed-background-fire" href="javascript:void(0)">';
+                                                                                        }else{
+                                                                                            event_data += '<div id="left20" onClick="loadPage(&quot;eventDetail.html&quot;,\''+ei_id+'\');openEventDetails(\''+ei_id+'\',\''+ei_na+'\')"><a class="widget-icon pull-left animation-fadeIn themed-background-fire" href="javascript:void(0)">';
+                                                                                        }
+                                                                                        event_data += '<h4 class="monthname">'+monthname+'.</h4><h3 class="dateDisplay">'+ei_ed.split('-')[0]+'</h3></a> '
+                                                                                                     +'<img class="widget-iconimg" src="'+ei_is+'">'
+                                                                                             +'</div>'
+                                                                                             +'<div id="right80">'
+                                                                                                     +'<h4 class="widget-content ">'+ei_na+'<span id="rightmon"></span><br /><input type="hidden" value=\''+ee+'\' id="currentEvent_'+ei_id+'"/>'
+                                                                                                     +'<span id="smalltextoo">'+ei_bo+'</span></h4></div>';
+//                                                                                                            console.log(getEventExists(ei_id));
+                                                                                             if(getEventExists(ei_id)){
+                                                                                                 console.log("4578878758564");
+                                                                                                 event_data +=   '<div class="subscdiv" id="subscribe_'+ei_id+'"><img src="http://icons.iconarchive.com/icons/custom-icon-design/pretty-office-3/256/remove-from-favorites-icon.png" onclick="unSubscribeEvent(\''+ei_id+'\',\''+ci_id+'\')" /></div>';
+                                                                                             }else{
+                                                                                                 console.log("dsffhgisdhgdshgu");
+                                                                                                 event_data += '<div class="subscdiv" id="subscribe_'+ei_id+'"><img src="http://icons.iconarchive.com/icons/custom-icon-design/pretty-office-3/256/add-to-favorites-icon.png" onclick="subscribeEvent(\''+ei_id+'\',\''+ci_id+'\')" /></div>';
+                                                                                             }
+                                                                                                   event_data += '<!--<div class="event-date"><span>'+ei_ed+'</span></div>id="subscribe_'+ei_id+'"id="subscribe_'+ei_id+'" subscribeEvent(\''+ei_id+'\',\''+eventItem+'\') -->'
+                                                                                                     +'<!--<div class="event-desc">subscriptionUrl: '+ei_su+'</div>-->'
+                                                                                                     +'<!--<div class="event-date">'+ei_ed+'</div>'
+                                                                                                     +'<div class="event-date"><button onclick="subscribeEvent(\''+ei_id+'\',\''+ci_id+'\')" class="subbtn">Subscribe</button></div>'
+                                                                                                     +'<div class="event-date"><button onclick="unSubscribeEvent(\''+ei_id+'\',\''+ci_id+'\')" class="subbtn">Unsubscribe</button></div>-->'
+                                                                                             +''
+                                                                                     +'</div></div></div>';
+										}
+									}
+									else{
+										event_data = "<h2>Please make new event</h2>";
+									}
+//                                                                        console.log(event_data);
+									$("#events-list").append( event_data );
+
+									$('#loaderssdsass').hide();
+									$('#main-container-new').hide();
+								},
+								error: function(jqXHR, textStatus, errorThrown){
+									$('#loaderssdsass').hide();
+									$('#main-container-new').hide();
+									console.log("ERRORS: " + textStatus);
+								}
+							});
+						}
+						getEventsList(endpoint);
+					});
+				}
+				
+				
+				else if(url == "eventDetail.html"){
+					$("#headingof").html("My subscriptions");
+					$("#events-list").empty();
+                                        $('#changenavhtml').html('<a href="javascript:void(0)" onclick="loadPage(&quot;myevents.html&quot;)" id="adasda"><i class="fa fa-angle-left" style="color:#fff;font-size: 24px; padding-top: 11px;"></i></a>')
+					.promise()
+					.done(function(){
+						$("#events-list").empty();
+						var company_id = "167";
+                                                var endpoint = "https://dev.rep1st.com/company-events/{company_id}/feed/full/{event_id}";
+                                                endpoint = endpoint.replace('{company_id}',company_id).replace('{event_id}',param);
+						//var endpoint="https://dev.rep1st.com/company-events/"
+										//+company_id+"/feed/teaser";
+						function getEventDetail(endpoint){
+							$.ajax({
+                                                            type: "GET",
+                                                            url: endpoint,
+                                                            success: function(data){
+                                                                    var event_data = '';
+                                                                    var subscribe_data = '';
+                                                                    var eventListsDetail = data.company;
+                                                                    console.log(data.company);
+                                                                    if (eventListsDetail.length>0){
+                                                                         event_data += '<div class="widget-header text-left">'
+                                                                                       +'<img class="widget-background animation-pulseSlow" style="width:100%;" id="imagehere" alt="Loading..." src="'+eventListsDetail[0]["event"]["image"]["src"]+'">'
+                                                                                       +'</div><br />' 
+                                                                                       +'<span id="pictitle" class="eventTitle">'+eventListsDetail[0]["event"]["name"]+'</span>'
+                                                                                       +'<div class="widget-main eventDesc" id="heredisc">'+eventListsDetail[0]["event"]["body"]+'</div>' 
+                                                                                       +'<div class=\"eventDat\"><span >'+getFormattedDate(eventListsDetail[0]["event"]["eventDate"])+'</span></div>';
+                                                                               
+                                                                               
+                                                                         if(getEventExists(param)){
+                                                                            subscribe_data +=   '<div class="subscdiv" id="subscribe_'+param+'"><img src="http://icons.iconarchive.com/icons/custom-icon-design/pretty-office-3/256/remove-from-favorites-icon.png" onclick="unSubscribeEvent(\''+param+'\',\''+company_id+'\')" /></div>';
+                                                                        }else{
+                                                                            subscribe_data += '<div class="subscdiv" id="subscribe_'+param+'"><img src="http://icons.iconarchive.com/icons/custom-icon-design/pretty-office-3/256/add-to-favorites-icon.png" onclick="subscribeEvent(\''+param+'\',\''+company_id+'\')" /></div>';
+                                                                        }
+//                                                                        subscribe_data+= '<div class="subscdiv"><i class="fa fa-envelope-o" aria-hidden="true"></i><i class="fa fa-thumbs-o-up" aria-hidden="true"></i></div>'
+
+                                                                    }
+                                                                    else{
+                                                                            event_data = "<h2>Event detail is not available</h2>";
+                                                                    }
+                                                                    $("#eventDetail").append(event_data);
+                                                                    $("#subscribe").append(subscribe_data)
+                                                                    
+                                                                    $('#loaderssdsass').hide();
+                                                                    $('#main-container-new').hide();
+                                                            },
+                                                            error: function(jqXHR, textStatus, errorThrown){
+                                                                    $('#loaderssdsass').hide();
+                                                                    $('#main-container-new').hide();
+                                                                    console.log("ERRORS: " + textStatus);
+                                                            }
+                                                        });
+						}
+						getEventDetail(endpoint);
+					});
+				}
+				else if(url.indexOf("events_view") !== -1){
+					$("#headingof").html("Events");
+					$('#changenavhtml').html('<a href="javascript:void(0)" onclick="loadPage(&quot;events.html&quot;)" id="adasda"><i class="fa fa-angle-left" style="color:#fff;font-size: 24px; padding-top: 11px;"></i></a>')
+					.promise()
+					.done(function(){
+						$("#event-details").empty();
+						var company_id = "167";
+						var event_id=getParameterByName('eventId', url);
+						var endpoint="https://dev.rep1st.com/company-events/167/feed/full/";
+						//var endpoint="https://dev.rep1st.com/company-events/"
+										//+company_id+"/feed/full/"+event_id;
+						function getEventDetail(endpoint){
+							$.ajax({
+								type: "POST",
+								url: endpoint,
+								success: function(data){
+									var detail_data = '';
+									var eventDetails = data.company;
+									if (eventDetails.length>0){
+										for(ind=0; ind<eventDetails.length; ind++){
+											eventItem = eventDetails[ind].event;
+											ei_id = eventItem.eventId;
+											ei_na = eventItem.name;
+											ei_is = eventItem.image.src;
+											ei_bo = eventItem.body;
+											ei_su = eventItem.subscriptionUrl;
+											ei_ed = getFormattedDate(eventItem.eventDate);
+											
+											detail_data +=
+											'<div class="detail-item">'
+												+'<div class="event-icon">'
+													+'<img src="'+ei_is+'">'
+												+'</div>'
+												+'<div class="event-detail">'
+													+'<h2 class="details-title">'+ei_na+'</h2>'
+													+'<div class="details-datetime">'+ei_ed+'</div>'
+													+'<div class="details-desc">'+ei_bo+'</div>'
+													+'<div class="details-desc">subscriptionUrl: '+ei_su+'</div>'
+												+'</div>'
+											+'</div>';
+										}
+									}
+									$("#event-details").append( detail_data );
+
+									$('#loaderssdsass').hide();
+									$('#main-container-new').hide();
+								},
+								error: function(jqXHR, textStatus, errorThrown){
+									$('#loaderssdsass').hide();
+									$('#main-container-new').hide();
+									console.log("ERRORS: " + textStatus);
+								}
+							});
+						}
+						getEventDetail(endpoint);
+					});
+				}
+				
+								
+				  
+				
+								  
+				else if(url == "qrCodeMenu.html")
+				{
+				    alert('Qr wizard page loaded, not yet implemented');
+				}
+				
+								
+								else if((matches=url.match(/^cms_(\d+)\.html$/))){
+					
+					var cmsData=[{"actions":{"listCMSPage":{"auth":false,"method":"GET","endpoint":"https:\/\/dev.rep1st.com\/cms-view\/178","description":"html version here https:\/\/dev.rep1st.com\/cms-view\/178\/html"}},"authRequired":false,"cache":1,"ttl":3600,"aboutMenuName":"About Us"},{"actions":{"listCMSPage":{"name":"listCMSPage","auth":false,"method":"GET","endpoint":"https:\/\/dev.rep1st.com\/cms-view\/179","description":"html version here https:\/\/dev.rep1st.com\/cms-view\/179\/html"}},"authRequired":false,"cache":0,"ttl":null,"aboutMenuName":"Evenings"}];
+					 console.log('cmsData');
+					 console.log(cmsData);
+					 
+					var cms=cmsData[matches[1]];
+					cms['cmsIndex']=matches[1];
+					$("#headingof").html(cms['aboutMenuName']);
+					$('#changenavhtml').html(goHome)
+					.promise()
+					.done(function(){
+                                            var cacheParam = cms['cache'];
+                                            var ttl = cms['ttl'];
+                                            console.log(ttl+"s sdff sdf sdf ");
+//                                            if(ttl)
+//                                            console.log(cacheParam+"       "+ttl);
+									
+                                     var x = getCookie(cms['cmsIndex']);
+									 
+                                    if(x == ''){
+                                        var endpoint=cms['actions']['listCMSPage']['endpoint'] ;
+                                        console.log(cms);
+                                        getAboutus(cms);
+                                    }else{
+                                        x = $.parseJSON(x);
+                                        $("#headingof").html(x.title);
+                                        $("#aboutus").append(x.body.replace(/&nbsp/g,'&nbsp;'));
+                                        $('#loaderssdsass').hide();
+                                        $("#main-container-new").hide();
+                                    }
+                                    
+//						var endpoint="";
+						//var endpoint="https://dev.rep1st.com/company-events/"
+										//+company_id+"/feed/full/"+event_id;
+						function getAboutus(cms){
+							 var endpoint=cms['actions']['listCMSPage']['endpoint'] ;
+							$.ajax({								
+								type: cms['actions']['listCMSPage']['method'],
+								url: endpoint,
+                                                                dataType: 'json',
+								success: function(data){
+                                                                    console.log(data);
+                                                                    $('#loaderssdsass').hide();
+                                                                    $("#main-container-new").hide();
+                                                                     var cmses = data.cmses;
+                                                                     
+                                                                     $("#headingof").html(cmses[0]["cms"]["title"]);
+                                                                     var body = JSON.parse(cmses[0]["cms"]["body"]);
+                                                                     var ob = {"title":cmses[0]["cms"]["title"],"body":body.html.replace(/&nbsp;/g,'&nbsp')};
+                                                                     $("#aboutus").append(body.html);
+                                                                     var dd = 'Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.';
+                                                                    if(cacheParam == '1'){
+                                                                        setCookie(cms['cmsIndex'],JSON.stringify(ob),ttl)
+                                                                    }
+                                                                    
+								},
+								error: function(jqXHR, textStatus, errorThrown){
+									$('#loaderssdsass').hide();
+									$('#main-container-new').hide();
+									console.log("ERRORS: " + textStatus);
+								}
+							});
+						}
+					});
+				}
+				
+												else if(url == "scanqr.html"){
+					$("#headingof").html("Scan QR Staff");
+					$('#changenavhtml').html(goHome)
+					.promise()
+					.done(function(){
+						$('#loaderssdsass').hide();
+						$("#main-container-new").hide();
+                                                var companyId = "167";
+                                                var userid = "2";
+                                                var endpoint = ""
+                                                endpoint = endpoint.replace('{company_di}',companyId).replace('{user_id}',userid);
+                                                function getQr(endpoint){
+							$.ajax({
+								type: "POST",
+								url: endpoint,
+								success: function(data){
+								
+								},
+								error: function(jqXHR, textStatus, errorThrown){
+									$('#loaderssdsass').hide();
+									$('#main-container-new').hide();
+									console.log("ERRORS: " + textStatus);
+								}
+							});
+						}
+                                                getQr(endpoint);
+					});
+				}
+				
+								
+							
+				else if(url == "menu_showbef.html"){
+					$("#headingof").html("Menu Selected");
+					$('#changenavhtml').html('<a href="javascript:void(0)" onclick="loadPage(&quot;categoryMenu.html&quot;)" id="adasda"><i class="fa fa-angle-left" style="color:#fff;font-size: 24px; padding-top: 11px;"></i></a>').promise().done(function(){
+					$('#loaderssdsass').hide();
+					$("#main-container-new").hide();
+
+					});		
+				}
+                                else if(url == "submenu.html"){
+					$("#headingof").html("Menu Selected");
+                                        console.log("sadfsadfsadfasdfasdfas");
+                                        var menu = JSON.parse('[{"name":"Contact Us","shortName":"Contact Us","logoUrl":"images\/8f165b6ed7ca4665cc0c6ddb336ab1cc2d4adee7.png","url":"contact.html"},{"name":"About Us","shortName":null,"logoUrl":"images\/4d9336acb1285ccbcd363a127288f0c483537c9c.png","url":"cms_0.html"},{"name":"Evenings","shortName":null,"logoUrl":"images\/4d9336acb1285ccbcd363a127288f0c483537c9c.png","url":"cms_1.html"},{"name":"My subscriptions","logoUrl":"images\/ad68f515a6fd5b5a81a10178a8c8a239017b6995.png","shortName":"Events","url":"myevents.html"},{"name":"Scan QR Staff","shortName":"QR Scan","logoUrl":"images\/Qr copy.png","url":"scanqr.html"},{"name":"Log out","shortName":"Logout","url":"logout.html","logoUrl":"images\/log%20out.png","auth":false},{"name":"Settings","shortName":null,"logoUrl":"images\/settings.png","url":"submenu.html"},{"name":"Unsubscribe notifications","parent":"settings","shortName":"Stop nofications","logoUrl":"images\/log%20out.png","skipHome":1},{"name":"Unsubscribe notifications","parent":"settings","shortName":"Stop nofications","logoUrl":"images\/log%20out.png","skipHome":1},{"name":"QrForm","shortName":"QrForm","logoUrl":"","url":"qrCodeMenu.html"}]' );
+                                        var menuitems;
+                                        for(var i = 0; i<menu.length;i++){
+                                            if(menu[i].parent && menu[i].parent == param){
+                                                console.log(menu[i].name);
+                                                menuitems += '<div class="menu-item" menuhome>';
+                                                if(menu[i].name == 'Subscribe notifications'){
+                                                    menuitems += '<a onClick="addNotification()" class="" ><img src="'+menu[i].logoUrl+'" /><p>'+menu[i].name+'</p></a>';
+                                                }else if(menu[i].name == 'Unsubscribe notifications'){
+                                                    menuitems += '<a onClick="deleteNotification()" class="" ><img src="'+menu[i].logoUrl+'" /><p>'+menu[i].name+'</p></a>';
+                                                }
+                                                menuitems += '</div>';
+                                            }
+                                        }
+                                        $(".menuhome").append(menuitems);
+					$('#changenavhtml').html('<a href="javascript:void(0)" onclick="loadPage(&quot;indexnew.html&quot;)" id="adasda"><i class="fa fa-angle-left" style="color:#fff;font-size: 24px; padding-top: 11px;"></i></a>').promise().done(function(){
+					$('#loaderssdsass').hide();
+					$("#main-container-new").hide();
+
+					});		
+				}
+				else if(url == "menu_show.html"){
+					$("#headingof").html("Espresso");
+					$('#changenavhtml').html('<a href="javascript:void(0)" onclick="loadPage(&quot;menu_showbef.html&quot;)" id="adasda"><i class="fa fa-angle-left" style="color:#fff;font-size: 24px; padding-top: 11px;"></i></a>')
+					.promise()
+					.done(function(){
+
+					});
+					$('#loaderssdsass').hide();
+					$("#main-container-new").hide();
+				}
+					
+					
+				else if(url == "menu_showa.html"){
+					$("#headingof").html("Light Roast");
+					$('#changenavhtml').html('<a href="javascript:void(0)" onclick="loadPage(&quot;menua.html&quot;)" id="adasda"><i class="fa fa-angle-left" style="color:#fff;font-size: 24px; padding-top: 11px;"></i></a>')
+					.promise().done(function(){
+					
+					});
+					$('#loaderssdsass').hide();
+					$("#main-container-new").hide();
+				}
+				else if(url == "coffee_detail.html"){
+					$("#headingof").html("Light Roast");
+					$('#changenavhtml').html('<a href="javascript:void(0)" onclick="loadPage(&quot;menu_showa.html&quot;)" id="adasda"><i class="fa fa-angle-left" style="color:#fff;font-size: 24px; padding-top: 11px;"></i></a>')
+					.promise().done(function(){
+
+					});
+					$('#loaderssdsass').hide();
+					$("#main-container-new").hide();
+				}
+				else if(recipeshow == "recipes_show.html?id="){
+					$('#changenavhtml').html('<a href="javascript:void(0)" onclick="loadPage(&quot;recipes.html&quot;)" id="adasda"><i class="fa fa-angle-left" style="color:#fff;font-size: 24px; padding-top: 11px;"></i></a>');
+					
+					var regex = /(\d+)/g;
+					var id=(url.match(regex));
+					var id = id.toString(); 
+					$.ajax({
+						url: "http://themusicdontstop.com/Helse/admin/app/index_codes.php",
+						type: "POST",
+						data: {recepiesone:id},
+						success: function (result) {
+							var JSONObject = JSON.parse(result);	
+							for (var key in JSONObject) {
+								if (JSONObject.hasOwnProperty(key)) {
+									$("#headingof").html(JSONObject[key]["name"]);
+									$('#heredisc').html(JSONObject[key]["description"])
+									.promise()
+									.done(function(){
+										$('#loaderssdsass').hide();
+										$("#main-container-new").hide();
+									});
+									document.getElementById("imagehere").src="images/"+JSONObject[key]["image"];
+								}
+							}
+						}
+					});
+				}
+			});//load the returned html into pageContet
+		}
+	});
+}
+function openEventDetails(id,name){
+    $("#headingof").html(name);
+    $('#changenavhtml').html('<a href="javascript:void(0)" onclick="loadPage(&quot;myevents.html&quot;)" id="adasda"><i class="fa fa-angle-left" style="color:#fff;font-size: 24px; padding-top: 11px;"></i></a>');
+    $("#events-list").empty();
+    var company_id = "167";
+    var endpoint = "https://dev.rep1st.com/company-events/{company_id}/feed/full/{event_id}";
+    endpoint = endpoint.replace('{company_id}',company_id).replace('{event_id}',id);
+    $.ajax({
+        type: "GET",
+        url: endpoint,
+        success: function(data){
+                var event_data = '';
+                var eventListsDetail = data.company;
+                console.log(data.company);
+                if (eventListsDetail.length>0){
+                     event_data += '<div class="widget-header text-left">'
+                                   +'<img class="widget-background animation-pulseSlow" style="width:100%;" id="imagehere" alt="Loading..." src="'+eventListsDetail[0]["event"]["image"]["src"]+'">'
+                                   +'</div><br />'
+                                   +'<span id="pictitle" class="eventTitle">'+eventListsDetail[0]["event"]["name"]+'</span>'
+                                   +'<div class="widget-main eventDtail" id="heredisc">'+eventListsDetail[0]["event"]["body"]+'</div><br />' 
+                                   +'<div class="detail_price" style="font-size: 20px;"><span class="price">'+getFormattedDate(eventListsDetail[0]["event"]["eventDate"])+'</span></div>';
+                    
+                }
+                else{
+                        event_data = "<h2>Event detail is not available</h2>";
+                }
+                //$("#events-list").append(event_data);
+
+                $('#loaderssdsass').hide();
+                $('#main-container-new').hide();
+        },
+        error: function(jqXHR, textStatus, errorThrown){
+                $('#loaderssdsass').hide();
+                $('#main-container-new').hide();
+                console.log("ERRORS: " + textStatus);
+        }
+    });
+}
+function setPrevVariable(){
+    if(categoryArrayItem.length == 1 && categoryArrayItem[0] == 0){
+        categoryArrayItem = [];
+    }
+    categoryArrayItem.pop();
+//    window.localStorage.setItem("prevItemId",id);
+//    window.localStorage.setItem("goPrev",true);
+}
+function setNextLocalVariables(id,prodCount){
+    console.log(JSON.stringify(id)); 
+    categoryArrayItem.push(id);
+    window.localStorage.setItem("prodCount",prodCount);
+//    window.localStorage.setItem("nextItemTitle",name);
+//    window.localStorage.setItem("nextItemId",id);
+//    window.localStorage.setItem("goPrev",false);
+}
+function getCookie(param) {
+    var name = param + "=";
+    var ca = document.cookie.split(';');
+    for(var i = 0; i <ca.length; i++) {
+        var c = ca[i];
+        while (c.charAt(0)==' ') {
+            c = c.substring(1);
+        }
+        if (c.indexOf(name) == 0) {
+            return c.substring(name.length,c.length);
+        }
+    }
+    return "";
+}
+function getEventExists(id){
+    console.log("sadfhasjkdfx");
+    var x = getCookie('subscriptions');
+    //for(ind=0; ind<eventLists.length; ind++){
+    if(x){
+     x = $.parseJSON(x);
+    console.log(x);
+    var ret = false;
+    
+     $.each(x, function (k,v) {
+         var currentarr = JSON.parse(x[k]);
+         console.log(currentarr.eventId+ "     sdfsadfsad  " + id );
+         if(currentarr.eventId == id){
+//            
+            ret = true;
+            console.log("yes");
+            return false;
+        }else{
+            ret = false;
+//            return false;;
+        }
+       
+     })
+      return ret;
+  }else{
+      return false;
+  }
+  
+}
+function setCookie(name,value,expire){
+    
+     var expires;
+    if (expire) {
+        var now = new Date();
+        var time = now.getTime();
+        time += 3600 * 1000;
+        now.setTime(time);
+        expires = "; expires=" + now.toUTCString();
+    }
+    else {
+        var expiration_date = new Date();
+        expiration_date.setFullYear(expiration_date.getFullYear() + 50);
+        expires = "; expires="+ expiration_date.toUTCString();
+    }
+    document.cookie = name + "=" + value + expires + "; path=/";
+}
+function subscribeEvent(eid,cid){
+    
+    console.log($("#currentEvent_"+eid).val());
+    subscribedEvents.push($("#currentEvent_"+eid).val());
+    
+    setCookie('subscriptions',JSON.stringify(subscribedEvents),'')
+    
+    $("#subscribe_"+eid).html('<img src="http://icons.iconarchive.com/icons/custom-icon-design/pretty-office-3/256/remove-from-favorites-icon.png" onClick="unSubscribeEvent(\''+eid+'\',\''+cid+'\')"/>');
+   
+    
+} 
+function unSubscribeEvent(eid,cid){
+    
+    var x = $.parseJSON(getCookie('subscriptions'));
+    var ret;
+     $.each(x, function (k,v) {
+         var currentarr = JSON.parse(x[k]);
+         console.log(currentarr.eventId+ "     sdfsadfsad  " + eid );
+         if(currentarr.eventId == eid){
+            x.splice(k, 1); 
+//            ret = true;
+//            console.log("yes");
+            return false;
+        }
+       
+     })
+    setCookie('subscriptions',JSON.stringify(x),'');
+    $("#subscribeItem_"+eid).hide();
+    $("#subscribe_"+eid).html('<img src="http://icons.iconarchive.com/icons/custom-icon-design/pretty-office-3/256/add-to-favorites-icon.png" onClick="subscribeEvent(\''+eid+'\',\''+cid+'\')"/>');
+    
+}
+
+$( document ).ready(function() {
+	$("#themeclick").click();
+	var url=getParameterByName('url'); 
+	loadPage(url);
+});
+function getParameterByName(name, url) {
+    if (!url) url = window.location.href;
+    name = name.replace(/[\[\]]/g, "\\$&");
+    var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+        results = regex.exec(url);
+    if (!results) return null;
+    if (!results[2]) return '';
+    return decodeURIComponent(results[2].replace(/\+/g, " "));
+}
+function ajaxRequest(handleData){
+    console.log(handleData.requestParams);
+    var datas;
+    $.ajax({
+        type: handleData.method,
+        url: handleData.url,
+        data: handleData.requestParams,
+        dataType: 'json',
+        async: false,
+        success: function(data){
+//            console.log(data);
+            datas = data;
+            
+//            handleData(data);
+//            alert(JSON.stringify(data));
+//            console.log(data);
+//            return data;
+//                var event_data = '';
+//                var eventListsDetail = data.company;
+//                console.log(data.company);
+//                if (eventListsDetail.length>0){
+//                     event_data += '<div class="widget-header text-left">'
+//                                   +'<img class="widget-background animation-pulseSlow" style="width:100%;" id="imagehere" alt="Loading..." src="'+eventListsDetail[0]["event"]["image"]["src"]+'">'
+//                                   +'</div><br />'
+//                                   +'<span id="pictitle" class="eventTitle">'+eventListsDetail[0]["event"]["name"]+'</span>'
+//                                   +'<div class="widget-main eventDtail" id="heredisc">'+eventListsDetail[0]["event"]["body"]+'</div><br />' 
+//                                   +'<div class="detail_price" style="font-size: 20px;"><span class="price">'+getFormattedDate(eventListsDetail[0]["event"]["eventDate"])+'</span></div>';
+//                    
+//                }
+//                else{
+//                        event_data = "<h2>Event detail is not available</h2>";
+//                }
+//                //$("#events-list").append(event_data);
+//
+//                $('#loaderssdsass').hide();
+//                $('#main-container-new').hide();
+        },
+        error: function(jqXHR, textStatus, errorThrown){
+//            alert(jqXHR+"   sdf     "+textStatus+"   dcfdh     "+errorThrown)
+                $('#loaderssdsass').hide();
+                $('#main-container-new').hide();
+                console.log("ERRORS: " + textStatus);
+        }
+    });
+    return datas;
+}
+function addNotification(){
+	
+	alert('add notification');
+	/*
+if(1 ){
+    var request = {"url":'https://dev.rep1st.com/api/v1/device-notifications/add'+'?access_token='+window.localStorage.getItem('accessToken'), "method":'POST',"requestParams":{"uniqueId": "#dsfsdfdfAADFaa"}};
+    
+    var response = ajaxRequest(request);
+    if(response.status == 'ok'){
+      var request = {"url":'https://dev.rep1st.com/api/v1/device-notifications/message'+'?access_token='+window.localStorage.getItem('accessToken'), "method":'POST',"requestParams":{"uniqueId": "#dsfsdfdfAADFaa","text":"Test message"}};
+    console.log(request);  
+    var msgreponse = ajaxRequest(request);
+     if(msgreponse.status == 'ok'){
+         alert(msgreponse.description);
+     }
+//        https://dev.rep1st.com/api/v1/device-notifications/remove
+//        alert(response.description);
+    }
+}*/
+
+}
+function deleteNotification(){
+
+alert('del notification');
+/*if(1 ){
+    var request = {"url":'https://dev.rep1st.com/api/v1/device-notifications/remove'+'?access_token='+window.localStorage.getItem('accessToken'), "method":'POST',"requestParams":{"uniqueId": "#dsfsdfdfAADFaa"}};
+    console.log(request);
+    var response = ajaxRequest(request);
+    if(response.status == 'ok'){
+        alert(response.description);
+    }
+}
+*/
+}
+function bbba(){
+	//  refreshIntervalId =   setInterval(PerformCalc, 10);
+	///	 refreshIntervalId1 =   setInterval(PerformCalc1, 10);
+	//	 refreshIntervalId2 =   setInterval(PerformCalc2, 10);
+	//	 refreshIntervalId3 =   setInterval(PerformCalc3, 10);	
+}
+function bbb(){
+	clearInterval(refreshIntervalId);
+	clearInterval(refreshIntervalId1);
+	clearInterval(refreshIntervalId2);
+	clearInterval(refreshIntervalId3);	
+}
+</script>
+<script type="text/javascript" charset="utf-8" src="cordova.js"></script>
+<script>
+function onBackButtonTapped() {
+   // document.location.reload(true);
+   $("#adasda").click();
+}
+
+function onDeviceReady() {
+    document.addEventListener("backbutton", onBackButtonTapped, false);
+//    window.open = cordova.InAppBrowser.open;
+}
+
+document.addEventListener("deviceready", onDeviceReady, false);
+
+function openURL(urlString){
+    myURL = encodeURI(urlString);
+    alert(myURL);
+    window.open(myURL, '_system');
+}
+function startScan() {
+    var auth = 1 
+    var url = new RegExp('dev.rep1st.com/qr-scan/\d+/\d+');
+    console.log(url);
+    var productUrl  = new RegExp('dev.rep1st.com/api/v1/tag-product/\d+/\d+/[\^a-z0-9]+');
+    console.log(productUrl);
+    var confirmation = '';
+//    var t = 'https://dev.rep1st.com/api/v1/tag-product/167/1/response6';
+    
+        cordova.plugins.barcodeScanner.scan(
+		function (result) {
+                    var t = result.text;
+                    if (t.match(url) || t.match(productUrl)) {
+                        if(auth && window.localStorage.getItem("accessToken")){
+                            var parts = t.split("/"),
+                            last_part = parts[parts.length-1];
+                            console.log(last_part);
+                            t = t+'?access_token='+window.localStorage.getItem("accessToken");
+                            var request = {"url":t, "method":'POST',"requestParams":{"tag": "super tag text"}};
+                            console.log(request);
+                            console.log(t);
+                            var response;
+                            if(confirmation){
+                                var r = confirm(confirmation);
+                               if(r == true){
+                                    response = ajaxRequest(request);
+                                    switch(last_part){
+                                        case "response1":
+                                            if(response.action.alert == '1'){
+                                                alert(response.description);
+                                                loadPage(''+response.action.goto+'','');
+                                            }       
+                                            break;
+                                        case "response2":
+                                            //if(response.action.alert == '1'){
+                                                window.open(response.action.goto,'_blank');
+                                            //}    
+                                            break;
+                                        case "response3":
+                                            if(response.action.alert == '1'){
+                                                alert("Operation Successful");
+                                            }
+                                            break;
+                                        case "response4":
+                                            alert(response.status+" : "+response.description);
+                                            break;
+                                        case "response5":
+                                            if(response.action.alert == '1'){
+                                                alert(response.description);
+                                                if(response.action.goto){
+                                                    loadPage(''+response.action.goto+'','');
+                                                }else{
+                                                    loadPage('indexa.html','');
+                                                }
+
+                                            } 
+                                            break;
+                                        case "response6":
+                                            break;
+                                    }
+                    
+                    console.log(response);
+                }
+
+            }else{
+                response = ajaxRequest(request);
+            }
+        }else{
+            window.location='indexnew.html?url=indexa.html&id=2';
+        }
+
+    } else {
+      alert("URL doesn't match");
+    }         
+		},
+		function (error) {
+			 alert("Scanning failed: " + error);
+		}
+	);
+//            
+    
+	
+}
+</script>
+</body>
+</html>

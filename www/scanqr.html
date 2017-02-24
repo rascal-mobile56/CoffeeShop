@@ -1,0 +1,41 @@
+Array
+(
+    [scanQRSTaff] => Array
+        (
+            [method] => POST
+            [auth] => 1
+            [staffAction] => 1
+            [description] => the scanned url from the qr is protected, this is the end point, the app must show the ok or error status https://dev.rep1st.com/qr-scan/1/1
+            [endpoint] => https://dev.rep1st.com/qr-scan/{company_id}/{user_id}
+            [pattern] => dev.rep1st.com/qr-scan/\d+/\d+
+        )
+
+    [scanQRTagProduct] => Array
+        (
+            [method] => POST
+            [auth] => 1
+            [staffAction] => 1
+            [description] => the scanned url from the qr is protected, this is the end point, the app must show the ok or error status https://dev.rep1st.com/qr-scan/1/1
+            [endpoint] => https://dev.rep1st.com/api/v1/tag-product/{company_id}/{user_id}/{responsex}
+            [corfirmation] => Are you sure you want to tag this product
+            [requestParams] => Array
+                (
+                    [tag] => super tag text
+                )
+
+            [pattern] => dev.rep1st.com/api/v1/tag-product/\d+/\d+/[\^a-z0-9]+
+            [response] => Array
+                (
+                    [status] => ok
+                    [description] => Tag added succesfully
+                    [actions] => Array
+                        (
+                            [alert] => 1
+                            [goto] => cms.html
+                        )
+
+                )
+
+        )
+
+)

@@ -1,0 +1,83 @@
+<widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" id="com.helse" version="1.0.0">
+  <name>Helse</name>
+  <description>Milk App.</description>
+  <author href="http://helse.co.in" email="support@helse.co.in">Helse Team</author>
+  <content src="index.html"/>
+  <preference name="DisallowOverscroll" value="true"/>
+  <preference name="android-minSdkVersion" value="14"/>
+  <plugin name="cordova-plugin-battery-status" source="npm" spec="~1.1.1"/>
+  <plugin name="cordova-plugin-camera" source="npm" spec="~2.1.1"/>
+  <plugin name="cordova-plugin-media-capture" source="npm" spec="~1.2.0"/>
+  <plugin name="cordova-plugin-console" source="npm" spec="~1.0.2"/>
+  <plugin name="cordova-plugin-contacts" source="npm" spec="~2.0.1"/>
+  <plugin name="cordova-plugin-device" source="npm" spec="~1.1.1"/>
+  <plugin name="cordova-plugin-device-motion" source="npm" spec="~1.2.0"/>
+  <plugin name="cordova-plugin-device-orientation" source="npm" spec="~1.0.2"/>
+  <plugin name="cordova-plugin-dialogs" source="npm" spec="~1.2.0"/>
+  <plugin name="cordova-plugin-file" source="npm" spec="~4.1.1"/>
+  <plugin name="cordova-plugin-file-transfer" source="npm" spec="~1.5.0"/>
+  <plugin name="cordova-plugin-media" source="npm" spec="~2.2.0"/>
+  <plugin name="cordova-plugin-splashscreen" source="npm" spec="~3.2.1"/>
+  <plugin name="cordova-plugin-statusbar" source="npm" spec="~2.1.2"/>
+  <plugin name="cordova-plugin-whitelist" source="npm" spec="~1.2.1"/>
+  <plugin name="com.phonegap.plugins.barcodescanner" spec="2.2.0" source="pgb" />
+  <plugin name="nl.x-services.plugins.socialsharing"  />
+  <plugin name="cordova-plugin-inappbrowser" source="npm"/>
+  <icon src="icon.png" />
+  
+  <preference name="ShowSplashScreenSpinner" value="false"  />
+  <preference name="FadeSplashScreen" value="false"  />
+  <preference name="StatusBarOverlaysWebView" value="false" />
+  <preference name="StatusBarBackgroundColor" value="#000000" />
+  <preference name="orientation" value="portrait"  />
+  <preference name="DisallowOverscroll" value="false"/>
+  <preference name="SplashScreen" value="none"/>
+  <preference name="deployment-target" value="7.0" />
+  <preference name="webviewbounce" value="false" />
+  <icon src="www/res/icon/android/drawable-ldpi-icon.png" platform="android" qualifier="ldpi" />
+  <icon src="www/res/icon/android/drawable-mdpi-icon.png" platform="android" qualifier="mdpi" />
+  <icon src="www/res/icon/android/drawable-hdpi-icon.png" platform="android" qualifier="hdpi" />
+  <icon src="www/res/icon/android/drawable-xhdpi-icon.png" platform="android" qualifier="xhdpi" />
+  <icon src="www/res/icon/android/drawable-xxhdpi-icon.png" platform="android" qualifier="xxhdpi" />
+  <icon src="www/res/icon/android/drawable-xxxhdpi-icon.png" platform="android" qualifier="fr-xxhdpi" />
+   <icon src="res/icon/ios/icon.png"            gap:platform="ios"        width="57" height="57" />
+    <icon src="res/icon/ios/icon.png"            gap:platform="ios"        width="72" height="72" />
+    <icon src="res/icon/ios/icon.png"         gap:platform="ios"        width="114" height="114" />
+<icon src="res/icon/ios/icon.png" gap:platform="ios" width="144" height="144" />
+  <platform name="wp8">
+    <icon src="www/res/icon/wp8/ApplicationIcon.png" platform="wp8" width="99" height="99"/>
+    <icon src="www/res/icon/wp8/Background.png" platform="wp8" width="159" height="159"/>
+    <splash src="www/res/screen/wp8/screen-portrait.jpg" platform="wp8" width="768" height="1280"/>
+  </platform>
+  <platform name="windows">
+    <icon src="www/res/icon/windows/Square150x150Logo.scale-100.png" platform="windows" width="150" height="150"/>
+    <icon src="www/res/icon/windows/Square30x30Logo.scale-100.png" platform="windows" width="30" height="30"/>
+    <icon src="www/res/icon/windows/StoreLogo.scale-100.png" platform="windows" width="50" height="50"/>
+    <splash src="www/res/screen/windows/SplashScreen.scale-100.png" platform="windows" width="620" height="300"/>
+    <icon src="www/res/icon/windows/StoreLogo.scale-240.png" platform="windows" width="120" height="120"/>
+    <icon src="www/res/icon/windows/Square44x44Logo.scale-100.png" platform="windows" width="44" height="44"/>
+    <icon src="www/res/icon/windows/Square44x44Logo.scale-240.png" platform="windows" width="106" height="106"/>
+    <icon src="www/res/icon/windows/Square70x70Logo.scale-100.png" platform="windows" width="70" height="70"/>
+    <icon src="www/res/icon/windows/Square71x71Logo.scale-100.png" platform="windows" width="71" height="71"/>
+    <icon src="www/res/icon/windows/Square71x71Logo.scale-240.png" platform="windows" width="170" height="170"/>
+    <icon src="www/res/icon/windows/Square150x150Logo.scale-240.png" platform="windows" width="360" height="360"/>
+    <icon src="www/res/icon/windows/Square310x310Logo.scale-100.png" platform="windows" width="310" height="310"/>
+    <icon src="www/res/icon/windows/Wide310x150Logo.scale-100.png" platform="windows" width="310" height="150"/>
+    <icon src="www/res/icon/windows/Wide310x150Logo.scale-240.png" platform="windows" width="744" height="360"/>
+    <splash src="www/res/screen/windows/SplashScreenPhone.scale-240.png" platform="windows" width="1152" height="1920"/>
+  </platform>
+  <access origin="*"/>
+  <allow-intent href="http://*/*"/>
+  <allow-intent href="https://*/*"/>
+  <allow-intent href="tel:*"/>
+  <allow-intent href="sms:*"/>
+  <allow-intent href="mailto:*"/>
+  <allow-intent href="geo:*"/>
+  <platform name="android">
+    <allow-intent href="market:*"/>
+  </platform>
+  <platform name="ios">
+    <allow-intent href="itms:*"/>
+    <allow-intent href="itms-apps:*"/>
+  </platform>
+</widget>

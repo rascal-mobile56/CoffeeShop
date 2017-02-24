@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<style>
+.navbar.navbar-default > span {
+	float: left;
+	font-size: 15px;
+	margin-top: -12%;
+	text-align: center;
+	width: 100%;
+}
+.sidebar-brand > img {
+	border-radius: 24px;
+	height: 80px;
+	width: 80px;
+	margin-top: 2%;
+}
+#sidebar {
+	z-index: 44444444;
+}
+.col-xs-12 {
+	text-align: center;
+}
+.sidebar-content {
+	width: 100% !important;
+}
+.sidebar-visible-xs #sidebar {
+	width: 80% !important;
+}
+#username_nav {
+	float: left;
+	width: 64%;
+	margin-left: 1%;
+	font-weight: bold;
+	margin-top: 5%;
+	text-align: center;
+	line-height: 35px;
+	color: #fff;
+	font-size: 22px;
+}
+.hvr-shutter-out-horizontal:hover {
+	text-decoration: none;
+}
+#userimage_nav {
+	float: left;
+	width: 35%;
+}
+#userimage_nav > img {
+	height: 90px;
+	margin-left: 3%;
+	width: 90px;
+}
+#main-container-new {
+	background: none repeat scroll 0 0 rgba(255, 255, 255, 0.7);
+	float: left;
+	height: 100%;
+	position: absolute;
+	text-align: center;
+	width: 100%;
+	z-index: 9999;
+}
+.sidebar-nav > li > a {
+	font-size: 18px;
+}
+header {
+	height: 56px;
+}
+.sidebar-nav > li {
+	padding: 2%;
+}
+html, body {
+	max-width: 100%;
+	overflow-x: hidden;
+}.navbar-default {
+    position: fixed !important;
+    top: 0;
+    width: 100% ;
+    z-index: 9999999;
+}#page-content {
+    margin-top: 15% !important;
+}
+.menu-item img {
+    width: 100%;
+}
+
+</style>
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" manifest="manifest.appcache">
+<!--<![endif]-->
+<head>
+<title>Helse</title>
+<meta charset="utf-8">
+<meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+<meta name="HandheldFriendly" content="true">
+<meta name="mobile-web-app-capable" content="yes">
+<link href="css/hover.css" rel="stylesheet" media="all">
+
+<!-- Icons -->
+<!-- The following icons can be replaced with your own, they are used by desktop and mobile browsers -->
+<link rel="shortcut icon" href="img/favicon.ico">
+<link rel="apple-touch-icon" href="img/icon57.png" sizes="57x57">
+<link rel="apple-touch-icon" href="img/icon72.png" sizes="72x72">
+<link rel="apple-touch-icon" href="img/icon76.png" sizes="76x76">
+<link rel="apple-touch-icon" href="img/icon114.png" sizes="114x114">
+<link rel="apple-touch-icon" href="img/icon120.png" sizes="120x120">
+<link rel="apple-touch-icon" href="img/icon144.png" sizes="144x144">
+<link rel="apple-touch-icon" href="img/icon152.png" sizes="152x152">
+<!-- END Icons -->
+
+<!-- Bootstrap is included in its original form, unaltered -->
+<link rel="stylesheet" href="css/bootstrap.min.css">
+
+<!-- Stylesheets -->
+<link rel="stylesheet" href="css/plugins.css">
+
+<!-- The m plugins -->
+<link rel="stylesheet" href="css/main.css">
+
+<!-- Include a specific file here from css/themes/ folder to alter the default theme of the template -->
+
+<!-- The themes stylesheet of this template (for using specific theme color in individual elements - must included last) -->
+<link rel="stylesheet" href="css/themes.css">
+<link rel="stylesheet" href="css/themes/autumn.css">
+<!-- END Stylesheets -->
+
+<!-- Modernizr (browser feature detection library) & Respond.js (Enable responsive CSS code on browsers that don't support it, eg IE8) -->
+<script src="js/vendor/modernizr-2.7.1-respond-1.4.2.min.js"></script>
+</head>
+<body>
+<div id="page-container" class="sidebar-partial sidebar-visible-lg sidebar-no-animations"> 
+  <!-- Alternative Sidebar -->
+  <div id="sidebar-alt"> 
+    <!-- Wrapper for scrolling functionality --> 
+    
+    <!-- END Wrapper for scrolling functionality --> 
+  </div>
+  <!-- END Alternative Sidebar --> 
+  
+  <!-- Main Sidebar -->
+  
+  <!-- END Main Sidebar -->
+  <div id="main-container-new" style="display:none;"></div>
+  <!-- Main Container -->
+  <div id="main-container"> 
+    <!-- Header --> 
+    <!-- In the PHP version you can set the following options from inc/config.html file --> 
+    <!--
+                    Available header.navbar classes:
+
+                    'navbar-default'            for the default light header
+                    'navbar-inverse'            for an alternative dark header
+
+                    'navbar-fixed-top'          for a top fixed header (fixed sidebars with scroll will be auto initialized, functionality can be found in js/app.js - handleSidebar())
+                        'header-fixed-top'      has to be added on #page-container only if the class 'navbar-fixed-top' was added
+
+                    'navbar-fixed-bottom'       for a bottom fixed header (fixed sidebars with scroll will be auto initialized, functionality can be found in js/app.js - handleSidebar()))
+                        'header-fixed-bottom'   has to be added on #page-container only if the class 'navbar-fixed-bottom' was added
+                -->
+    <header class="navbar navbar-default" id="fixed"> 
+      <!-- Left Header Navigation -->
+      <ul class="nav navbar-nav-custom">
+        <!-- Main Sidebar Toggle Button -->
+        <li id="changenavhtml"> <a href="javascript:void(0)" onclick="sidebar();" id="adasda"> </a> </li>
+      </ul>
+      <span id="headingof" style=""> </span> </header>
+    <!-- END Header -->
+    <style>
+	#headingof{
+	width:75%;margin:0 auto;margin-top:3%;font-weight:bold;font-size:25px;	
+	font-family: serif;
+	}
+#loaderssdsass {
+    background: rgba(255, 255, 255, 0.7) none repeat scroll 0 0;
+    float: left;
+    height: 100%;
+    margin-left: -1.3%;
+    margin-top: -20%;
+    position: absolute;
+    text-align: center;
+    width: 101%;
+    z-index: 2147483647;
+}#loaderssdsassimg{
+background: #fff none repeat scroll 0 0;
+    border: 2px solid #b5572a ;
+    border-radius: 6px;
+    margin-top: 70%;
+    padding: 2%;
+    width: 13%;
+}.navbar-default {
+    border-bottom: 2px solid #fff !important;
+}
+@media only screen and (min-width:856px) and (max-width:1026px) {
+#headingof{
+ font-size: 25px;
+    font-weight: bold;
+    margin: 1% auto 0;
+    width: 90%
+}
+}
+@media only screen and (min-width:675px) and (max-width:790px) {
+
+#headingof {
+    font-size: 25px;
+    font-weight: bold;
+    margin: 1% auto 0;
+    width: 86%;
+}}
+@media only screen and (min-width:791px) and (max-width:855px) {
+#headingof {
+    font-size: 25px;
+    font-weight: bold;
+    margin: 1% auto 0;
+    width: 86%;
+}}
+
+#logoutpage {
+    margin-bottom: 100%;
+}
+body{
+	
+	  background-size:107% !important;
+}
+</style>
+    <!-- Page content -->
+    
+    <div id="page-content" style="overflow:none;">
+      <div id="loaderssdsass" style="display:none;"> <img src="images/loading.gif" id="loaderssdsassimg"> </div>
+      <div class="row" id="pagea-contentaa" style=""> </div>
+    </div>
+    <!-- END Page Content --> 
+    <!-- Footer --> 
+    
+    <!-- END Footer --> 
+  </div>
+  <!-- END Main Container --> 
+</div>
+<!-- END Page Container --> 
+
+<span id="detailsveh" style="display:none;"></span> 
+<!-- Scroll to top link, initialized in js/app.js - scrollToTop() --> 
+<a href="#" id="to-top"><i class="fa fa-angle-double-up"></i></a> 
+
+<!-- User Settings, modal which opens from Settings link (found in top right user menu) and the Cog link (found in sidebar user info) --> 
+
+<!-- END User Settings --> 
+
+<!-- Remember to include excanvas for IE8 chart support --> 
+<!--[if IE 8]><script src="js/helpers/excanvas.min.js"></script><![endif]--> 
+<script>!window.jQuery && document.write(decodeURI('%3Cscript src="js/vendor/jquery-1.11.0.min.js"%3E%3C/script%3E'));</script> 
+
+<!-- Bootstrap.js, Jquery plugins and Custom JS code --> 
+<script src="js/vendor/bootstrap.min.js"></script> 
+<script>                 
+	
+function ajaxStart(){
+    $('#pagea-conten').addClass('ajax');
+  }
+ function ajaxComplete(){
+    $('#pagea-conten').removeClass('ajax');
+  }
+
+function loadPage(url)	//the function that loads pages via AJAX
+{    
+
+
+	
+			 
+    
+	
+   	setTimeout(function() { run_nowa(); }, 600);
+	setTimeout(function() { run_nowaa(); }, 500);
+	setTimeout(function() { run_now(url); }, 1000);
+	
+
+}
+function run_nowa(){
+
+	$('#loaderssdsass').show();
+	$('#main-container-new').show();
+}
+function run_nowaa(){
+
+}
+function run_now(url){
+	//document.getElementById("page-content").style.backgroundColor = "#b5572a";
+	 
+
+$.ajax({	//create an ajax request to load_page.html
+		type: "POST",
+		url: url,
+		success: function(msg){
+			
+	$('#changenavhtml').html('<a href="javascript:void(0)"  onclick="window.location=&quot;index.html&quot;;"; id="adasda"><img  src="images/abcd.png"></a>');		
+	 $("#detailsveh").html(msg).promise().done(function(){
+        var a = $('#page-contenta').html();
+     var recipeshow = url.replace(/\d+/g, '');
+
+	   $("#pagea-contentaa").html(a).promise().done(function(){
+		   if(url == "indexa.html"){
+		 document.body.style.background= "rgba(0, 0, 0, 0) url('images/69e194d8d414bb734b19891f62700500b5544a20.jpg') no-repeat scroll 0 55px"; 
+			   }
+		   else {
+			 document.body.style.background = "url('images/ASDA.jpg')"; 
+			// document.body.style.backgroundColor = "#b5572a"; 
+		   }
+		  
+		   if(url == "indexa.html"){
+		  $("#headingof").html("Coffee House");
+		 $('#loaderssdsass').hide();
+	     $("#main-container-new").hide();
+		
+	}
+	
+		else if(url == "contactus.html"){
+		  $("#headingof").html("Contact Us");
+		   $('#changenavhtml').html('<a href="javascript:void(0)" onclick="loadPage(&quot;indexa.html&quot;)" id="adasda"><i class="fa fa-angle-left" style="color:#fff;font-size: 24px; padding-top: 11px;"></i></a>').promise().done(function(){
+$('#loaderssdsass').hide();
+		   $("#main-container-new").hide();
+
+	
+});		
+	}
+	else if(url == "events.html"){
+		  $("#headingof").html("Events");
+		  $('#changenavhtml').html('<a href="javascript:void(0)" onclick="loadPage(&quot;indexa.html&quot;)" id="adasda"><i class="fa fa-angle-left" style="color:#fff;font-size: 24px; padding-top: 11px;"></i></a>').promise().done(function(){
+$('#loaderssdsass').hide();
+		   $("#main-container-new").hide();
+	
+});		
+	}
+	
+	else if(url == "events_view.html"){
+		  $("#headingof").html("Events");
+		  $('#changenavhtml').html('<a href="javascript:void(0)" onclick="loadPage(&quot;events.html&quot;)" id="adasda"><i class="fa fa-angle-left" style="color:#fff;font-size: 24px; padding-top: 11px;"></i></a>').promise().done(function(){
+$('#loaderssdsass').hide();
+		   $("#main-container-new").hide();
+	
+});		
+	}
+	
+		else if(url == "aboutus.html"){
+		  $("#headingof").html("About Us");
+		  $('#changenavhtml').html('<a href="javascript:void(0)" onclick="loadPage(&quot;indexa.html&quot;)" id="adasda"><i class="fa fa-angle-left" style="color:#fff;font-size: 24px; padding-top: 11px;"></i></a>').promise().done(function(){
+$('#loaderssdsass').hide();
+		   $("#main-container-new").hide();
+	
+});		
+
+
+var fixed = document.getElementById('page-content');
+
+fixed.removeEventListener('touchmove', function(e) {
+	//alert();
+        //e.preventDefault();
+
+});
+
+
+	}
+			else if(url == "Qr.html"){
+		  $("#headingof").html("Qr Scanner");
+		  $('#changenavhtml').html('<a href="javascript:void(0)" onclick="loadPage(&quot;indexa.html&quot;)" id="adasda"><i class="fa fa-angle-left" style="color:#fff;font-size: 24px; padding-top: 11px;"></i></a>').promise().done(function(){
+$('#loaderssdsass').hide();
+		   $("#main-container-new").hide();
+	
+});		
+	}
+	
+	
+			else if(url == "menu.html"){
+		  $("#headingof").html("Menu");
+		  $('#changenavhtml').html('<a href="javascript:void(0)" onclick="loadPage(&quot;indexa.html&quot;)" id="adasda"><i class="fa fa-angle-left" style="color:#fff;font-size: 24px; padding-top: 11px;"></i></a>').promise().done(function(){
+$('#loaderssdsass').hide();
+		   $("#main-container-new").hide();
+
+
+	
+});		
+	}
+				else if(url == "menu_showbef.html"){
+		  $("#headingof").html("Menu Selected");
+		  $('#changenavhtml').html('<a href="javascript:void(0)" onclick="loadPage(&quot;menu.html&quot;)" id="adasda"><i class="fa fa-angle-left" style="color:#fff;font-size: 24px; padding-top: 11px;"></i></a>').promise().done(function(){
+$('#loaderssdsass').hide();
+		   $("#main-container-new").hide();
+	
+});		
+	}
+	
+				else if(url == "menu_show.html"){
+		  $("#headingof").html("Espresso");
+		  $('#changenavhtml').html('<a href="javascript:void(0)" onclick="loadPage(&quot;menu_showbef.html&quot;)" id="adasda"><i class="fa fa-angle-left" style="color:#fff;font-size: 24px; padding-top: 11px;"></i></a>').promise().done(function(){
+
+	
+});		$('#loaderssdsass').hide();
+		   $("#main-container-new").hide();
+	}
+		
+		
+		
+				else if(url == "menua.html"){
+		  $("#headingof").html("Coffee");
+		  $('#changenavhtml').html('<a href="javascript:void(0)" onclick="loadPage(&quot;indexa.html&quot;)" id="adasda"><i class="fa fa-angle-left" style="color:#fff;font-size: 24px; padding-top: 11px;"></i></a>').promise().done(function(){
+$('#loaderssdsass').hide();
+		   $("#main-container-new").hide();
+	
+});		
+	}
+	
+				else if(url == "menu_showa.html"){
+		  $("#headingof").html("Light Roast");
+		  $('#changenavhtml').html('<a href="javascript:void(0)" onclick="loadPage(&quot;menua.html&quot;)" id="adasda"><i class="fa fa-angle-left" style="color:#fff;font-size: 24px; padding-top: 11px;"></i></a>').promise().done(function(){
+
+	
+});		$('#loaderssdsass').hide();
+		   $("#main-container-new").hide();
+	}
+
+
+			else if(url == "coffee_detail.html"){
+		  $("#headingof").html("Light Roast");
+		  $('#changenavhtml').html('<a href="javascript:void(0)" onclick="loadPage(&quot;menu_showa.html&quot;)" id="adasda"><i class="fa fa-angle-left" style="color:#fff;font-size: 24px; padding-top: 11px;"></i></a>').promise().done(function(){
+
+	
+});		$('#loaderssdsass').hide();
+		   $("#main-container-new").hide();
+	}
+	
+		
+		else if(recipeshow == "recipes_show.html?id="){
+			 $('#changenavhtml').html('<a href="javascript:void(0)" onclick="loadPage(&quot;recipes.html&quot;)" id="adasda"><i class="fa fa-angle-left" style="color:#fff;font-size: 24px; padding-top: 11px;"></i></a>');		
+	
+			var regex = /(\d+)/g;
+            var id=(url.match(regex));
+			var id = id.toString(); 
+					$.ajax({
+            url: "http://themusicdontstop.com/Helse/admin/app/index_codes.php",
+            type: "POST",
+			data: {recepiesone:id},
+            success: function (result) {
+					
+var JSONObject = JSON.parse(result);	
+ for (var key in JSONObject) {
+    if (JSONObject.hasOwnProperty(key)) {
+     	    $("#headingof").html(JSONObject[key]["name"]);
+$('#heredisc').html(JSONObject[key]["description"]).promise().done(function(){
+$('#loaderssdsass').hide();
+		   $("#main-container-new").hide();
+	
+});
+document.getElementById("imagehere").src="images/"+JSONObject[key]["image"];
+
+	  }
+    }
+			}});
+	}
+	
+
+
+		  
+			});	//load the returned html into pageContet
+	    });
+		}
+	});
+
+}
+
+$( document ).ready(function() {
+$("#themeclick").click();
+
+	var url=getParameterByName('url'); 
+	loadPage(url);
+	  
+});
+function getParameterByName(name, url) {
+    if (!url) url = window.location.href;
+    name = name.replace(/[\[\]]/g, "\\$&");
+    var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+        results = regex.exec(url);
+    if (!results) return null;
+    if (!results[2]) return '';
+    return decodeURIComponent(results[2].replace(/\+/g, " "));
+}
+
+
+
+function bbba(){
+	   //  refreshIntervalId =   setInterval(PerformCalc, 10);
+	///	 refreshIntervalId1 =   setInterval(PerformCalc1, 10);
+	//	 refreshIntervalId2 =   setInterval(PerformCalc2, 10);
+	//	 refreshIntervalId3 =   setInterval(PerformCalc3, 10);	
+	
+}
+
+function bbb(){
+	
+clearInterval(refreshIntervalId);
+clearInterval(refreshIntervalId1);
+clearInterval(refreshIntervalId2);
+clearInterval(refreshIntervalId3);	
+}
+	
+
+ </script> 
+<script type="text/javascript" charset="utf-8" src="cordova.js"></script>
+<script>
+function onBackButtonTapped() {
+   // document.location.reload(true);
+   $("#adasda").click();
+}
+
+function onDeviceReady() {
+    document.addEventListener("backbutton", onBackButtonTapped, false);
+}
+
+document.addEventListener("deviceready", onDeviceReady, false);
+
+function openURL(urlString){
+    myURL = encodeURI(urlString);
+    window.open(myURL, '_system');
+}
+
+
+function startScan() {
+    cordova.plugins.barcodeScanner.scan(
+        function (result) {
+
+   var ref = cordova.InAppBrowser.open(result.text, '_blank', 'location=yes');
+  		//openURL(result.text);
+           // document.getElementById("results").innerHTML = s;
+        },
+        function (error) {
+           // alert("Scanning failed: " + error);
+        }
+    );
+}
+
+
+
+
+
+
+
+</script>
+	
+</body>
+</html>
